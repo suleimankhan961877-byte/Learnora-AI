@@ -71,7 +71,7 @@ def ask_ai(prompt):
         return None, "AI API key is not configured."
 
     # Change this model name to a model available in your API account.
-    model = st.secrets.get("OPENAI_MODEL", "gpt-5")
+    model = st.secrets.get("OPENAI_MODEL", "gpt-5.6-luna")
 
     try:
         response = client.responses.create(
